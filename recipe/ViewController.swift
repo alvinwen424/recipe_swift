@@ -17,6 +17,12 @@ class ViewController: UITableViewController {
         tableView.rowHeight = 70
         tableView.backgroundView = UIImageView(image: UIImage(named: "coffee"))
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.navigationBar.alpha = 0.5
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
