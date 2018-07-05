@@ -32,14 +32,24 @@ class ViewController: UITableViewController {
         return array.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell") as! CustomCell
         cell.textLabel?.text = array[indexPath.item]
         if(indexPath.item % 2 == 0){
             cell.backgroundColor = UIColor.clear.withAlphaComponent(0.2)
         }else{
             cell.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         }
+        cell.Recipe = cell.textLabel?.text
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "detailview"){
+            let cell = sender as! CustomCell
+            let detailview = segue.destination as! DetailViewController
+            detailview.preRecipe = cell.Recipe
+        }
+    }
 }
+
 

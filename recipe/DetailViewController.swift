@@ -10,12 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var preRecipe: String?
+    @IBOutlet weak var recipeContent: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        recipeContent.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        self.title = preRecipe
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

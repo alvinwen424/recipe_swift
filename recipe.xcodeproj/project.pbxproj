@@ -16,6 +16,9 @@
 		A4E28F3320E867F50067B1DB /* recipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E28F3220E867F50067B1DB /* recipeUITests.swift */; };
 		A4EA5E5320EB32C400303765 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E5220EB32C400303765 /* AddViewController.swift */; };
 		A4EA5E5520EB32DB00303765 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E5420EB32DB00303765 /* DetailViewController.swift */; };
+		A4EA5E5720EB384700303765 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E5620EB384700303765 /* CustomCell.swift */; };
+		A4EA5E5920EEA98B00303765 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E5820EEA98B00303765 /* Recipe.swift */; };
+		A4EA5E5B20EEAB9B00303765 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E5A20EEAB9B00303765 /* RecipeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		A4E28F3420E867F50067B1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EA5E5220EB32C400303765 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A4EA5E5420EB32DB00303765 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A4EA5E5620EB384700303765 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		A4EA5E5820EEA98B00303765 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A4EA5E5A20EEAB9B00303765 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 		A4E28F1120E867F40067B1DB /* recipe */ = {
 			isa = PBXGroup;
 			children = (
+				A4EA5E5620EB384700303765 /* CustomCell.swift */,
 				A4E28F1220E867F40067B1DB /* AppDelegate.swift */,
 				A4E28F1420E867F40067B1DB /* ViewController.swift */,
+				A4EA5E5820EEA98B00303765 /* Recipe.swift */,
+				A4EA5E5A20EEAB9B00303765 /* RecipeManager.swift */,
 				A4EA5E5220EB32C400303765 /* AddViewController.swift */,
 				A4EA5E5420EB32DB00303765 /* DetailViewController.swift */,
 				A4E28F1620E867F40067B1DB /* Main.storyboard */,
@@ -267,6 +276,9 @@
 			files = (
 				A4E28F1520E867F40067B1DB /* ViewController.swift in Sources */,
 				A4E28F1320E867F40067B1DB /* AppDelegate.swift in Sources */,
+				A4EA5E5720EB384700303765 /* CustomCell.swift in Sources */,
+				A4EA5E5920EEA98B00303765 /* Recipe.swift in Sources */,
+				A4EA5E5B20EEAB9B00303765 /* RecipeManager.swift in Sources */,
 				A4EA5E5320EB32C400303765 /* AddViewController.swift in Sources */,
 				A4EA5E5520EB32DB00303765 /* DetailViewController.swift in Sources */,
 			);

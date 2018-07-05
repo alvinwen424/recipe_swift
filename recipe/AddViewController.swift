@@ -16,7 +16,8 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleText.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        recipeContent.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         // Do any additional setup after loading the view.
     }
 
