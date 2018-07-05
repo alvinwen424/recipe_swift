@@ -100,7 +100,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="titleDoneButton_click:" destination="FOM-8y-VZ2" eventType="editingDidEndOnExit" id="mHf-ha-aZh"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nkV-9J-r8l">
                                 <rect key="frame" x="0.0" y="178" width="375" height="356"/>
@@ -126,7 +129,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Zu1-Qh-5Dp"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Recipe" id="h5i-AD-Qro">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="h8N-wT-h0e">
+                            <connections>
+                                <action selector="doneButton_click:" destination="FOM-8y-VZ2" id="hSn-vw-85f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="fJi-7l-IG6" id="XRY-Rl-rgf"/>
+                        <outlet property="doneButton" destination="h8N-wT-h0e" id="nFl-nt-igl"/>
                         <outlet property="recipeContent" destination="nkV-9J-r8l" id="G9e-Ty-c7I"/>
                         <outlet property="titleText" destination="54G-bF-j8j" id="3dW-zL-9Ab"/>
                     </connections>
